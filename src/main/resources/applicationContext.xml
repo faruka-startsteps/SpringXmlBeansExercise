@@ -4,12 +4,10 @@
        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
 
-    <!--  Create a bean for MyService  -->
+    <bean id="myService" class="org.example.MyService"/>
 
-
-    <!--  Create beans for TextFormatter and TextPrinter  -->
-
-
+    <bean id="textPrinter" class="org.example.TextPrinter" autowire="byType"/>
+    <bean id="textFormatter" class="org.example.TextFormatter"/>
 
 
 </beans>
